@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: -webkit-gradient(linear, left top, right top, from(#242424), to(#000000));
+  background: linear-gradient(90deg, #242424, #000000);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container .child {
+  width: 300px;
+  height: 200px;
+  background: -webkit-gradient(linear, right top, left top, from(#743ad5), to(#d53a9d));
+  background: linear-gradient(to left, #743ad5, #d53a9d);
+  -webkit-transition: 500ms ease-in-out;
+  transition: 500ms ease-in-out;
+  -webkit-transition-property: width height border-radius box-shadow;
+  transition-property: width height border-radius box-shadow;
+  border-radius: 0%;
+}
+
+.container .child:hover {
+  width: 400px;
+  height: 100vh;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.container .two {
+  background: -webkit-gradient(linear, left top, right top, from(#743ad5), to(#d53a9d));
+  background: linear-gradient(to right, #743ad5, #d53a9d);
+}
+
+.container .four {
+  background: -webkit-gradient(linear, left top, right top, from(#743ad5), to(#d53a9d));
+  background: linear-gradient(to right, #743ad5, #d53a9d);
+}
+
+.container .six {
+  background: -webkit-gradient(linear, left top, right top, from(#743ad5), to(#d53a9d));
+  background: linear-gradient(to right, #743ad5, #d53a9d);
+}
+/*# sourceMappingURL=main.css.map */
