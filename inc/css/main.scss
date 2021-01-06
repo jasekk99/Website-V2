@@ -1,5 +1,7 @@
 $gradient1left: linear-gradient(to left, #743ad5, #d53a9d);
 $gradient1right: linear-gradient(to right, #743ad5, #d53a9d);
+$image1: url("../img/swiss-mountain.jpg");
+$image2:url("../img/swiss-mountain2.jpg");
 
 body{
     margin: 0;
@@ -14,7 +16,6 @@ body{
     .child{
         width: 300px;
         height: 200px;
-        background: $gradient1left;
         transition: 500ms ease-in-out;
         transition-property: width height border-radius box-shadow;
         border-radius: 0%;
@@ -24,13 +25,14 @@ body{
             box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
         }
     }
+    .one{
+        background: $image1;
+        background-size: cover;
+        background-position: center;
+    }
     .two{
-        background: $gradient1right;
-    }
-    .four{
-        background: $gradient1right;
-    }
-    .six{
-        background: $gradient1right;
+        background: $image2;
+        background-size: cover;
+        background-position: center;
     }
 }

@@ -21,8 +21,6 @@ body {
 .container .child {
   width: 300px;
   height: 200px;
-  background: -webkit-gradient(linear, right top, left top, from(#743ad5), to(#d53a9d));
-  background: linear-gradient(to left, #743ad5, #d53a9d);
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
   -webkit-transition-property: width height border-radius box-shadow;
@@ -37,18 +35,15 @@ body {
           box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
+.container .one {
+  background: url("../img/swiss-mountain.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .container .two {
-  background: -webkit-gradient(linear, left top, right top, from(#743ad5), to(#d53a9d));
-  background: linear-gradient(to right, #743ad5, #d53a9d);
-}
-
-.container .four {
-  background: -webkit-gradient(linear, left top, right top, from(#743ad5), to(#d53a9d));
-  background: linear-gradient(to right, #743ad5, #d53a9d);
-}
-
-.container .six {
-  background: -webkit-gradient(linear, left top, right top, from(#743ad5), to(#d53a9d));
-  background: linear-gradient(to right, #743ad5, #d53a9d);
+  background: url("../img/swiss-mountain2.jpg");
+  background-size: cover;
+  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */
