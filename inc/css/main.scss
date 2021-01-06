@@ -1,7 +1,11 @@
 $gradient1left: linear-gradient(to left, #743ad5, #d53a9d);
 $gradient1right: linear-gradient(to right, #743ad5, #d53a9d);
 $image1: url("../img/swiss-mountain.jpg");
-$image2:url("../img/swiss-mountain2.jpg");
+$image2: url("../img/swiss-mountain2.jpg");
+$image3: url("../img/image3.jpg");
+$image4: url("../img/image4.jpg");
+$image5: url("../img/image5.jpg");
+$image6: url("../img/image6.jpg");
 
 body{
     margin: 0;
@@ -15,14 +19,16 @@ body{
     height: 100vh;
     .child{
         width: 300px;
-        height: 200px;
+        height: 300px;
         transition: 500ms ease-in-out;
         transition-property: width height border-radius box-shadow;
         border-radius: 0%;
+        opacity: 60%;
         &:hover{
             width: 400px;
             height: 100vh;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            opacity: 100%;
+            cursor: pointer;
         }
     }
     .one{
@@ -32,6 +38,26 @@ body{
     }
     .two{
         background: $image2;
+        background-size: cover;
+        background-position: center;
+    }
+    .three{
+        background: $image3;
+        background-size: cover;
+        background-position: center;
+    }
+    .four{
+        background: $image4;
+        background-size: cover;
+        background-position: center;
+    }
+    .five{
+        background: $image5;
+        background-size: cover;
+        background-position: center;
+    }
+    .six{
+        background: $image6;
         background-size: cover;
         background-position: center;
     }

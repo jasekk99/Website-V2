@@ -20,19 +20,20 @@ body {
 
 .container .child {
   width: 300px;
-  height: 200px;
+  height: 300px;
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
   -webkit-transition-property: width height border-radius box-shadow;
   transition-property: width height border-radius box-shadow;
   border-radius: 0%;
+  opacity: 60%;
 }
 
 .container .child:hover {
   width: 400px;
   height: 100vh;
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  opacity: 100%;
+  cursor: pointer;
 }
 
 .container .one {
@@ -43,6 +44,30 @@ body {
 
 .container .two {
   background: url("../img/swiss-mountain2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container .three {
+  background: url("../img/image3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container .four {
+  background: url("../img/image4.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container .five {
+  background: url("../img/image5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container .six {
+  background: url("../img/image6.jpg");
   background-size: cover;
   background-position: center;
 }
