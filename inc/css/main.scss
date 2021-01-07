@@ -95,4 +95,13 @@ body{
         text-align: right;
         margin: 5%;
     }
+    .BackBtn{
+        position: relative;
+        width: 100px;
+        top: 42vh;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
 }

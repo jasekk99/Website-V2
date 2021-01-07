@@ -110,4 +110,14 @@ body {
   text-align: right;
   margin: 5%;
 }
+
+.container-imagepage .BackBtn {
+  position: relative;
+  width: 100px;
+  top: 42vh;
+}
+
+.container-imagepage .BackBtn:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */

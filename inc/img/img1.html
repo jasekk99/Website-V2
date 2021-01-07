@@ -16,6 +16,7 @@
             <h2>Lorem ipsum dolor sit amet consectetur.</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Nulla ipsum modi ipsam tempora ut nihil inventore delectus ad.<br> Cum quos ab atque. Iste nisi excepturi ratione dolores delectus quo laboriosam!</p>
         </div>
+        <img src="./img/arrow_back-white.svg" class="BackBtn" onclick="PageTransition()">
     </div>
 
 <script>
@@ -27,6 +28,26 @@ function animation(){
         duration: 1,
         y:0
     });
+}
+
+function PageTransition(){
+    gsap.to(".MainImage", {
+        duration: 2.3,
+        x:-1400
+    });
+    gsap.to(".Text", {
+        duration: 2.3,
+        y:-1400
+    });
+    gsap.to(".BackBtn", {
+        duration: 1,
+        y:200
+    });
+    
+    setTimeout(PageOpen, 700)
+    function PageOpen(){
+        window.open('../../index.html', '_self');
+    }
 }
 </script>
 </body>
