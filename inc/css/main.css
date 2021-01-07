@@ -1,11 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 body {
   margin: 0;
   padding: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#242424), to(#000000));
-  background: linear-gradient(90deg, #242424, #000000);
+  background: #1f1f1f;
 }
 
-.container {
+.container-main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,57 +18,87 @@ body {
   height: 100vh;
 }
 
-.container .child {
+.container-main .child {
   width: 300px;
   height: 300px;
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
-  -webkit-transition-property: width height border-radius box-shadow;
-  transition-property: width height border-radius box-shadow;
+  -webkit-transition-property: width height border-radius box-shadow background-size;
+  transition-property: width height border-radius box-shadow background-size;
   border-radius: 0%;
   opacity: 60%;
 }
 
-.container .child:hover {
-  width: 400px;
+.container-main .child:hover {
+  width: 500px;
   height: 100vh;
   opacity: 100%;
   cursor: pointer;
 }
 
-.container .one {
-  background: url("../img/swiss-mountain.jpg");
+.container-main .one {
+  background: url("../img/img/img1.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.container .two {
-  background: url("../img/swiss-mountain2.jpg");
+.container-main .two {
+  background: url("../img/img/img2.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.container .three {
-  background: url("../img/image3.jpg");
+.container-main .three {
+  background: url("../img/img/img3.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.container .four {
-  background: url("../img/image4.jpg");
+.container-main .four {
+  background: url("../img/img/img4.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.container .five {
-  background: url("../img/image5.jpg");
+.container-main .five {
+  background: url("../img/img/img5.jpg");
   background-size: cover;
   background-position: center;
 }
 
-.container .six {
-  background: url("../img/image6.jpg");
+.container-main .six {
+  background: url("../img/img/img6.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.container-main a {
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.container-imagepage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  height: 100vh;
+}
+
+.container-imagepage .MainImage {
+  background: url("../img/img/img1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  margin: 0 100px 0 0;
+}
+
+.container-imagepage .Text {
+  color: white;
+  font-family: 'Poppins';
+  text-align: right;
+  margin: 5%;
 }
 /*# sourceMappingURL=main.css.map */
