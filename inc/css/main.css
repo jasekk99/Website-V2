@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background: #1f1f1f;
+  overflow: hidden;
 }
 
 .container-main {
@@ -20,7 +21,7 @@ body {
 
 .container-main .child {
   width: 300px;
-  height: 300px;
+  height: 100vh;
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
   -webkit-transition-property: width height border-radius box-shadow background-size;
