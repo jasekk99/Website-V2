@@ -40,8 +40,8 @@ function PageTransition(){
         y:-1400
     });
     gsap.to(".BackBtn", {
-        duration: 1,
-        y:200
+        duration: 1.5,
+        x:-2000
     });
     
     setTimeout(PageOpen, 700)
@@ -49,6 +49,13 @@ function PageTransition(){
         window.open('../../index.html', '_self');
     }
 }
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        PageTransition()
+    }
+};
 </script>
 </body>
 </html>
