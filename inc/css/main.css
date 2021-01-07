@@ -91,6 +91,9 @@ body {
 }
 
 .container-imagepage .MainImage {
+  position: relative;
+  -webkit-transform: translateX(-1200px);
+          transform: translateX(-1200px);
   background: url("../img/img/img1.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -99,6 +102,9 @@ body {
 }
 
 .container-imagepage .Text {
+  position: relative;
+  -webkit-transform: translateY(1200px);
+          transform: translateY(1200px);
   color: white;
   font-family: 'Poppins';
   text-align: right;

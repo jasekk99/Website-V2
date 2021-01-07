@@ -9,7 +9,7 @@
 </head>
 <body onload="animation()">
     <div class="container-main">
-        <a href="./inc/img/img1.html">
+        <a onclick="PageTransition();event.preventDefault();">
             <div class="child one"></div>
         </a>
         <a href="./inc/img/img2.html">
@@ -29,13 +29,35 @@
         </a>
     </div>
 <script>
+let childList = ['one','two','three','four','five','six']
+
 function animation(){
-    gsap.to(".one", {duration:0.5, y:-1000})
-    gsap.to(".two", {duration:0.9, y:-1000})
-    gsap.to(".three", {duration:1.3, y:-1000})
-    gsap.to(".four", {duration:1.7, y:-1000})
-    gsap.to(".five", {duration:2.1, y:-1000})
-    gsap.to(".six", {duration:2.5, y:-1000})
+    for(i=0;i<6;i++){
+        gsap.to("."+childList[i], {duration:i-0.6*i, y:-1000});
+    }
+}
+
+function PageTransition(){
+        gsap.to('.one', {duration:0.2, x:-1000})
+        gsap.to('.two', {duration:0.2, y:1000})
+        gsap.to('.three', {duration:0.4, y:1000})
+        gsap.to('.four', {duration:0.3, y:1000})
+        gsap.to('.five', {duration:0.2, y:1000})
+        gsap.to('.six', {duration:0.2, x:1000})
+        /*if(i == 0 || 5){
+            if(i == 0){
+                gsap.to("."+childList[i], {duration:0.2, x:-1000});
+            }
+            if(i == 5){
+                gsap.to("."+childList[i], {duration:0.2, x:1000});
+            } 
+        } else{
+            gsap.to("."+childList[i], {duration:i-0.6*i, y:-1000}); 
+        }*/
+    setTimeout(PageOpen, 1000)
+    function PageOpen(){
+        window.open('./inc/img/img1.html', '_self');
+    }
 }
 </script>
 </body>

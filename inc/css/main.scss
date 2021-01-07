@@ -79,6 +79,8 @@ body{
     height: 100vh;
 
     .MainImage{
+        position: relative;
+        transform: translateX(-1200px);
         background: $image1 no-repeat;
         background-size: cover;
         background-position: center;
@@ -86,10 +88,11 @@ body{
         margin: 0 100px 0 0;
     }
     .Text{
+        position: relative;
+        transform: translateY(1200px);
         color: white;
         font-family: 'Poppins';
         text-align: right;
         margin: 5%;
-        
     }
 }

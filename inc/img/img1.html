@@ -20,12 +20,12 @@
 
 <script>
 function animation(){
-    gsap.from(".MainImage", {
-        duration: 1, x:-1200
+    gsap.to(".MainImage", {
+        duration: 1, x:0
     });
-    gsap.from(".Text", {
+    gsap.to(".Text", {
         duration: 1,
-        y:1200
+        y:0
     });
 }
 </script>
