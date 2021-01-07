@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./inc/css/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
     <title>Website-V2</title>
 </head>
-<body>
+<body onload="animation()">
     <div class="container-main">
         <a href="./inc/img/img1.html">
             <div class="child one"></div>
@@ -27,5 +29,16 @@
             <div class="child six"></div>
         </a>
     </div>
+<script>
+function animation(){
+    gsap.from(".one", {duration:1, y:12000})
+    gsap.from(".two", {duration:1.2, y:12000})
+    gsap.from(".three", {duration:1.4, y:12000})
+    gsap.from(".four", {duration:1.6, y:12000})
+    gsap.from(".five", {duration:1.8, y:12000})
+    gsap.from(".six", {duration:2, y:12000})
+    
+}
+</script>
 </body>
 </html>
