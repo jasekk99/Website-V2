@@ -20,6 +20,8 @@ body {
 }
 
 .container-main .child {
+  position: relative;
+  top: 1000px;
   width: 300px;
   height: 100vh;
   -webkit-transition: 500ms ease-in-out;

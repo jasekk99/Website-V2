@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" media="screen and (max-width: 999px)" href="../css/responsive/imageResponsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <title>Image1</title>
 </head>
-<body>
+<body onload="animation()">
     <div class="container-imagepage">
         <div class="MainImage"></div>
         <div class="Text">
@@ -16,5 +17,17 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Nulla ipsum modi ipsam tempora ut nihil inventore delectus ad.<br> Cum quos ab atque. Iste nisi excepturi ratione dolores delectus quo laboriosam!</p>
         </div>
     </div>
+
+<script>
+function animation(){
+    gsap.from(".MainImage", {
+        duration: 1, x:-1200
+    });
+    gsap.from(".Text", {
+        duration: 1,
+        y:1200
+    });
+}
+</script>
 </body>
 </html>
