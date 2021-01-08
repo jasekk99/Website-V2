@@ -1,7 +1,8 @@
 .container-imagepage{
-    display:grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 50%);
+    display:flex;
+    position: relative;
+    justify-content: center;
+
 
     .MainImage{
         width: 100%;
