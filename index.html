@@ -9,22 +9,22 @@
 </head>
 <body onload="animation()">
     <div class="container-main">
-        <a onclick="PageTransition();event.preventDefault();">
+        <a onclick="PageTransition1();event.preventDefault();">
             <div class="child one"></div>
         </a>
-        <a href="./inc/img/img2.html">
+        <a onclick="PageTransition2();event.preventDefault();">
             <div class="child two"></div>
         </a>
-        <a href="./inc/img/img3.html">
+        <a onclick="PageTransition3();event.preventDefault();">
             <div class="child three"></div>
         </a>
-        <a href="./inc/img/img4.html">
+        <a onclick="PageTransition4();event.preventDefault();">
             <div class="child four"></div>
         </a>
-        <a href="./inc/img/img5.html">
+        <a onclick="PageTransition5();event.preventDefault();">
             <div class="child five"></div>
         </a>
-        <a href="./inc/img/img6.html">
+        <a onclick="PageTransition6();event.preventDefault();">
             <div class="child six"></div>
         </a>
     </div>
@@ -33,30 +33,79 @@ let childList = ['one','two','three','four','five','six']
 
 function animation(){
     for(i=0;i<6;i++){
-        gsap.to("."+childList[i], {duration:i-0.6*i, y:-1000});
+        gsap.to("."+childList[i], {duration:i-0.8*i, y:-1000});
     }
 }
-
-function PageTransition(){
+function PageTransition1(){
         gsap.to('.one', {duration:0.2, x:-1000})
         gsap.to('.two', {duration:0.2, y:1000})
         gsap.to('.three', {duration:0.4, y:1000})
         gsap.to('.four', {duration:0.3, y:1000})
         gsap.to('.five', {duration:0.2, y:1000})
         gsap.to('.six', {duration:0.2, x:1000})
-        /*if(i == 0 || 5){
-            if(i == 0){
-                gsap.to("."+childList[i], {duration:0.2, x:-1000});
-            }
-            if(i == 5){
-                gsap.to("."+childList[i], {duration:0.2, x:1000});
-            } 
-        } else{
-            gsap.to("."+childList[i], {duration:i-0.6*i, y:-1000}); 
-        }*/
     setTimeout(PageOpen, 1000)
     function PageOpen(){
         window.open('./inc/img/img1.html', '_self');
+    }
+}
+function PageTransition2(){
+        gsap.to('.one', {duration:0.2, x:-1000})
+        gsap.to('.two', {duration:0.2, y:1000})
+        gsap.to('.three', {duration:0.4, y:1000})
+        gsap.to('.four', {duration:0.3, y:1000})
+        gsap.to('.five', {duration:0.2, y:1000})
+        gsap.to('.six', {duration:0.2, x:1000})
+    setTimeout(PageOpen, 1000)
+    function PageOpen(){
+        window.open('./inc/img/img2.html', '_self');
+    }
+}
+function PageTransition3(){
+        gsap.to('.one', {duration:0.2, x:-1000})
+        gsap.to('.two', {duration:0.2, y:1000})
+        gsap.to('.three', {duration:0.4, y:1000})
+        gsap.to('.four', {duration:0.3, y:1000})
+        gsap.to('.five', {duration:0.2, y:1000})
+        gsap.to('.six', {duration:0.2, x:1000})
+    setTimeout(PageOpen, 1000)
+    function PageOpen(){
+        window.open('./inc/img/img3.html', '_self');
+    }
+}
+function PageTransition4(){
+        gsap.to('.one', {duration:0.2, x:-1000})
+        gsap.to('.two', {duration:0.2, y:1000})
+        gsap.to('.three', {duration:0.4, y:1000})
+        gsap.to('.four', {duration:0.3, y:1000})
+        gsap.to('.five', {duration:0.2, y:1000})
+        gsap.to('.six', {duration:0.2, x:1000})
+    setTimeout(PageOpen, 1000)
+    function PageOpen(){
+        window.open('./inc/img/img4.html', '_self');
+    }
+}
+function PageTransition5(){
+        gsap.to('.one', {duration:0.2, x:-1000})
+        gsap.to('.two', {duration:0.2, y:1000})
+        gsap.to('.three', {duration:0.4, y:1000})
+        gsap.to('.four', {duration:0.3, y:1000})
+        gsap.to('.five', {duration:0.2, y:1000})
+        gsap.to('.six', {duration:0.2, x:1000})
+    setTimeout(PageOpen, 1000)
+    function PageOpen(){
+        window.open('./inc/img/img5.html', '_self');
+    }
+}
+function PageTransition6(){
+        gsap.to('.one', {duration:0.2, x:-1000})
+        gsap.to('.two', {duration:0.2, y:1000})
+        gsap.to('.three', {duration:0.4, y:1000})
+        gsap.to('.four', {duration:0.3, y:1000})
+        gsap.to('.five', {duration:0.2, y:1000})
+        gsap.to('.six', {duration:0.2, x:1000})
+    setTimeout(PageOpen, 1000)
+    function PageOpen(){
+        window.open('./inc/img/img6.html', '_self');
     }
 }
 </script>
