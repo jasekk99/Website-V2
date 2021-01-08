@@ -22,7 +22,8 @@
 <script>
 function animation(){
     gsap.to(".MainImage6", {
-        duration: 1, x:0
+        duration: 1,
+        x:0
     });
     gsap.to(".Text", {
         duration: 1,
@@ -33,7 +34,7 @@ function animation(){
 function PageTransition(){
     gsap.to(".MainImage6", {
         duration: 2.3,
-        x:-1400
+        x:-1400,
     });
     gsap.to(".Text", {
         duration: 2.3,
@@ -41,10 +42,10 @@ function PageTransition(){
     });
     gsap.to(".BackBtn", {
         duration: 1.5,
-        x:-2000
+        x:-2200
     });
     
-    setTimeout(PageOpen, 700)
+    setTimeout(PageOpen, 800)
     function PageOpen(){
         window.open('../../index.html', '_self');
     }
