@@ -8,6 +8,7 @@ $image3: url("../img/img/img3.jpg");
 $image4: url("../img/img/img4.jpg");
 $image5: url("../img/img/img5.jpg");
 $image6: url("../img/img/img6.jpg");
+$imgAnim: all 500ms ease-in-out;
 
 body{
     margin: 0;
@@ -72,16 +73,61 @@ body{
         overflow: hidden;
     }
 }
-
+/* Image HTMLs */
 .container-imagepage{
     display: flex;
     justify-content: right;
     height: 100vh;
 
-    .MainImage{
+    .MainImage1{
         position: relative;
         transform: translateX(-1200px);
         background: $image1 no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        margin: 0 100px 0 0;
+    }
+    .MainImage2{
+        position: relative;
+        transform: translateX(-1200px);
+        background: $image2 no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        margin: 0 100px 0 0;
+    }
+    .MainImage3{
+        position: relative;
+        transform: translateX(-1200px);
+        background: $image3 no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        margin: 0 100px 0 0;
+    }
+    .MainImage4{
+        position: relative;
+        transform: translateX(-1200px);
+        background: $image4 no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        margin: 0 100px 0 0;
+    }
+    .MainImage5{
+        position: relative;
+        transform: translateX(-1200px);
+        background: $image5 no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        margin: 0 100px 0 0;
+    }
+    .MainImage6{
+        position: relative;
+        transform: translateX(-1200px);
+        background: $image6 no-repeat;
         background-size: cover;
         background-position: center;
         width: 50%;
