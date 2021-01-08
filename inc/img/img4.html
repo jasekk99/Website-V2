@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" media="screen and (max-width: 999px)" href="../css/responsive/imageResponsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <title>Image1</title>
+</head>
+<body onload="animation()">
+    <div class="container-imagepage">
+        <div class="MainImage4"></div>
+        <div class="Text">
+            <h1>Lorem, ipsum dolor.</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Nulla ipsum modi ipsam tempora ut nihil inventore delectus ad.<br> Cum quos ab atque. Iste nisi excepturi ratione dolores delectus quo laboriosam!</p>
+        </div>
+        <img src="./img/arrow_back-white.svg" class="BackBtn" onclick="PageTransition()">
+    </div>
+
+<script>
+function animation(){
+    gsap.to(".MainImage4", {
+        duration: 1, x:0
+    });
+    gsap.to(".Text", {
+        duration: 1,
+        y:0
+    });
+}
+
+function PageTransition(){
+    gsap.to(".MainImage4", {
+        duration: 2.3,
+        x:-1400
+    });
+    gsap.to(".Text", {
+        duration: 2.3,
+        y:-1400
+    });
+    gsap.to(".BackBtn", {
+        duration: 1.5,
+        x:-2000
+    });
+    
+    setTimeout(PageOpen, 700)
+    function PageOpen(){
+        window.open('../../index.html', '_self');
+    }
+}
+
+document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 27) {
+        PageTransition()
+    }
+};
+</script>
+</body>
+</html>
