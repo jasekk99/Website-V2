@@ -100,8 +100,6 @@ body {
   background-position: center;
   width: 50%;
   margin: 0 100px 0 0;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
 }
 
 .container-imagepage .MainImage2 {
@@ -113,8 +111,6 @@ body {
   background-position: center;
   width: 50%;
   margin: 0 100px 0 0;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
 }
 
 .container-imagepage .MainImage3 {
@@ -126,8 +122,6 @@ body {
   background-position: center;
   width: 50%;
   margin: 0 100px 0 0;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
 }
 
 .container-imagepage .MainImage4 {
@@ -139,8 +133,6 @@ body {
   background-position: center;
   width: 50%;
   margin: 0 100px 0 0;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
 }
 
 .container-imagepage .MainImage5 {
@@ -152,8 +144,6 @@ body {
   background-position: center;
   width: 50%;
   margin: 0 100px 0 0;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
 }
 
 .container-imagepage .MainImage6 {
@@ -165,13 +155,6 @@ body {
   background-position: center;
   width: 50%;
   margin: 0 100px 0 0;
-  -webkit-transition: all 500ms ease-in-out;
-  transition: all 500ms ease-in-out;
-}
-
-.container-imagepage .MainImage1:hover, .container-imagepage .MainImage2:hover, .container-imagepage .MainImage3:hover, .container-imagepage .MainImage4:hover, .container-imagepage .MainImage5:hover, .container-imagepage .MainImage6:hover {
-  width: 51%;
-  margin: 0 95px 0 0;
 }
 
 .container-imagepage .Text {
