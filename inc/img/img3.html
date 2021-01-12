@@ -28,6 +28,10 @@ function animation(){
         duration: 1,
         y:0
     });
+    gsap.from(".BackBtn", {
+        duration: 1,
+        x:1000
+    });
 }
 
 function PageTransition(){
@@ -40,8 +44,8 @@ function PageTransition(){
         y:-1400
     });
     gsap.to(".BackBtn", {
-        duration: 1.5,
-        x:-2200
+        duration: 2,
+        y:1000
     });
     
     setTimeout(PageOpen, 700)
